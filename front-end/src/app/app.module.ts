@@ -7,12 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TaskComponent } from './task/task.component';
-import { HttpClientModule } from '@angular/common/http';
+
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, TasksComponent, NavbarComponent],
 
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TaskComponent],
+  imports: [BrowserModule, AppRoutingModule, TaskComponent, CommonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
